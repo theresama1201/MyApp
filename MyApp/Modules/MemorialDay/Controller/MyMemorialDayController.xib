@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyMemorialDayController">
+            <connections>
+                <outlet property="memorialDayView" destination="i5M-Pr-FkT" id="Hgy-bE-SAV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="MyMemorialDayView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6x-te-78m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-B0-Q2w">
+                            <rect key="frame" x="0.0" y="15" width="375" height="55"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memorialday_header_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-se-Jim">
+                                    <rect key="frame" x="20" y="10" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ha0-se-Jim" secondAttribute="height" multiplier="1:1" id="SER-ij-nYj"/>
+                                        <constraint firstAttribute="height" constant="35" id="XTv-lB-Lh9"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从2016.10.30至今" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZj-CV-Jea">
+                                    <rect key="frame" x="63" y="31" width="91" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们已相爱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLM-t0-fKa">
+                                    <rect key="frame" x="63" y="9.5" width="82" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="513 天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29I-4w-q17">
+                                    <rect key="frame" x="263" y="9.5" width="87" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="textColor" red="0.16758977184815618" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="A2K-53-U5B"/>
+                                <constraint firstItem="VLM-t0-fKa" firstAttribute="top" secondItem="ha0-se-Jim" secondAttribute="top" id="MWL-8Z-ogn"/>
+                                <constraint firstItem="VLM-t0-fKa" firstAttribute="leading" secondItem="ha0-se-Jim" secondAttribute="trailing" constant="8" id="UFC-nK-PKd"/>
+                                <constraint firstAttribute="trailing" secondItem="29I-4w-q17" secondAttribute="trailing" constant="25" id="WKj-sy-sZH"/>
+                                <constraint firstItem="JZj-CV-Jea" firstAttribute="leading" secondItem="ha0-se-Jim" secondAttribute="trailing" constant="8" id="ZHi-sE-Nx0"/>
+                                <constraint firstItem="29I-4w-q17" firstAttribute="centerY" secondItem="K2f-B0-Q2w" secondAttribute="centerY" id="edt-aE-23f"/>
+                                <constraint firstItem="ha0-se-Jim" firstAttribute="leading" secondItem="K2f-B0-Q2w" secondAttribute="leading" constant="20" id="hwt-av-mIg"/>
+                                <constraint firstItem="JZj-CV-Jea" firstAttribute="top" secondItem="VLM-t0-fKa" secondAttribute="bottom" constant="2" id="o0Y-HP-Tcq"/>
+                                <constraint firstItem="ha0-se-Jim" firstAttribute="centerY" secondItem="K2f-B0-Q2w" secondAttribute="centerY" id="zd2-GK-lWK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="K2f-B0-Q2w" firstAttribute="centerX" secondItem="I6x-te-78m" secondAttribute="centerX" id="1AJ-cK-IpW"/>
+                        <constraint firstAttribute="trailing" secondItem="K2f-B0-Q2w" secondAttribute="trailing" id="7qk-8L-E0d"/>
+                        <constraint firstItem="K2f-B0-Q2w" firstAttribute="centerY" secondItem="I6x-te-78m" secondAttribute="centerY" id="J8c-er-gfy"/>
+                        <constraint firstAttribute="height" constant="85" id="WJy-Iz-yfk"/>
+                        <constraint firstItem="K2f-B0-Q2w" firstAttribute="leading" secondItem="I6x-te-78m" secondAttribute="leading" id="YId-aD-Ssq"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kYs-aF-cAE">
+                    <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-Rt-Pa8">
+                    <rect key="frame" x="0.0" y="85" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Wre-HA-VSr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSO-ZP-ASS">
+                    <rect key="frame" x="25" y="86" width="1" height="581"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="92e-ES-3YS"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memorialday_header_img" translatesAutoresizingMaskIntoConstraints="NO" id="iEm-Qw-c6W">
+                    <rect key="frame" x="61" y="5" width="299" height="80"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kYs-aF-cAE" firstAttribute="top" secondItem="oSe-Rt-Pa8" secondAttribute="bottom" id="3os-uA-Ogk"/>
+                <constraint firstAttribute="trailing" secondItem="kYs-aF-cAE" secondAttribute="trailing" id="4j0-DX-649"/>
+                <constraint firstItem="sSO-ZP-ASS" firstAttribute="top" secondItem="oSe-Rt-Pa8" secondAttribute="bottom" id="5yD-7n-oDj"/>
+                <constraint firstItem="oSe-Rt-Pa8" firstAttribute="top" secondItem="iEm-Qw-c6W" secondAttribute="bottom" id="DPS-IP-Uq3"/>
+                <constraint firstItem="iEm-Qw-c6W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="OWJ-Vi-Cv4"/>
+                <constraint firstAttribute="trailing" secondItem="iEm-Qw-c6W" secondAttribute="trailing" constant="15" id="SPY-8U-zQc"/>
+                <constraint firstAttribute="trailing" secondItem="oSe-Rt-Pa8" secondAttribute="trailing" id="Vcq-8S-rEz"/>
+                <constraint firstItem="I6x-te-78m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZBz-RU-Rd9"/>
+                <constraint firstItem="iEm-Qw-c6W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="61" id="auI-1e-Bbm"/>
+                <constraint firstItem="kYs-aF-cAE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b42-v5-r3W"/>
+                <constraint firstItem="I6x-te-78m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bHI-sr-chR"/>
+                <constraint firstAttribute="bottom" secondItem="sSO-ZP-ASS" secondAttribute="bottom" id="cx1-C0-9Xc"/>
+                <constraint firstItem="sSO-ZP-ASS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="e9i-ge-ioM"/>
+                <constraint firstAttribute="trailing" secondItem="I6x-te-78m" secondAttribute="trailing" id="hqP-Rp-cBz"/>
+                <constraint firstItem="oSe-Rt-Pa8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nyk-ZW-r6N"/>
+                <constraint firstAttribute="bottom" secondItem="kYs-aF-cAE" secondAttribute="bottom" id="tbO-3h-pCf"/>
+                <constraint firstItem="oSe-Rt-Pa8" firstAttribute="top" secondItem="I6x-te-78m" secondAttribute="bottom" id="y1S-Bs-auJ"/>
+            </constraints>
+            <connections>
+                <outlet property="headerImageView" destination="iEm-Qw-c6W" id="IZP-sD-VxM"/>
+                <outlet property="headerView" destination="I6x-te-78m" id="24P-96-N7p"/>
+                <outlet property="loveDaysLabel" destination="29I-4w-q17" id="sZ9-WU-dHJ"/>
+                <outlet property="memorialDayTableView" destination="kYs-aF-cAE" id="PhK-J4-Ig7"/>
+                <outlet property="sinceDayLabel" destination="JZj-CV-Jea" id="buB-ON-RBM"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="memorialday_header_icon" width="30" height="30"/>
+        <image name="memorialday_header_img" width="183" height="55"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+PODS:
+  - SRMModalViewController (0.0.3)
+
+DEPENDENCIES:
+  - SRMModalViewController
+
+SPEC CHECKSUMS:
+  SRMModalViewController: b15d762c6c2531fb0d14f756fd513b1aef4c98a1
+
+PODFILE CHECKSUM: 03f4b36afefe0bc3a7c4a075e15d98dbd3aacb1b
+
+COCOAPODS: 1.2.0

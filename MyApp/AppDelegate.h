@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (AppDelegate *)sharedAppDelegate;
+- (void)successSigninApp;
+- (void)showTabBarController;
+- (void)showMyView;
 
 @end
 
