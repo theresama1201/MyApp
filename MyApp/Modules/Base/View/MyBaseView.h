@@ -10,6 +10,4 @@
 
 @interface MyBaseView : UIView
 
-- (void)initialize;
-
 @end

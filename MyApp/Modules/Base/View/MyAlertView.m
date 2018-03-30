@@ -32,6 +32,8 @@ static const CGFloat mButtonTitleFontSize = 17;
 
 @implementation MyAlertView
 
+#pragma mark - Init
+
 + (instancetype)alertWithTitle:(NSString *)title message:(NSString *)message delegate:(id<MyAlertViewDelegate>)delegate buttonTitles:(NSArray<NSString *> *)buttonTitles selectButtonIndex:(NSInteger)index {
     MyAlertView *alertView = [[MyAlertView alloc] init];
     alertView.title = title;
@@ -43,26 +45,23 @@ static const CGFloat mButtonTitleFontSize = 17;
     return alertView;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self initialize];
-    }
-
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        [self initialize];
-    }
-
-    return self;
-}
-
 - (void)initialize {
     self.backgroundColor = [UIColor whiteColor];
     [self drawAllBorderWithWidth:1 cornerRadius:3 color:[UIColor B5Color]];
 }
+
+
+#pragma mark - Responder
+
+- (void)didTapButton:(UIButton *)button {
+    [self.modalViewController hide];
+
+    if ([self.delegate respondsToSelector:@selector(alertView:didTapButtonIndex:)]) {
+        [self.delegate alertView:self didTapButtonIndex:button.tag];
+    }
+}
+
+#pragma mark - Public
 
 - (void)show {
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -91,6 +90,8 @@ static const CGFloat mButtonTitleFontSize = 17;
     self.modalViewController.enableTapOutsideToDismiss = NO;
     [self.modalViewController showView:self];
 }
+
+#pragma mark - Private
 
 - (void)addImageView {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake([self viewWidth] - mImageViewWidth, 0, mImageViewWidth, mImageViewWidth)];
@@ -172,14 +173,6 @@ static const CGFloat mButtonTitleFontSize = 17;
 
 - (CGFloat)viewWidth {
     return CGRectGetWidth([UIScreen mainScreen].bounds) - mViewLeftAndRightMargin * 2;
-}
-
-- (void)didTapButton:(UIButton *)button {
-    [self.modalViewController hide];
-
-    if ([self.delegate respondsToSelector:@selector(alertView:didTapButtonIndex:)]) {
-        [self.delegate alertView:self didTapButtonIndex:button.tag];
-    }
 }
 
 @end

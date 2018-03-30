@@ -7,6 +7,9 @@
 //
 
 #import "MyAddController.h"
+#import "MyTextField.h"
+#import "AppDelegate.h"
+#import "UIView+Frame.h"
 
 @interface MyAddController ()
 
@@ -14,24 +17,16 @@
 
 @implementation MyAddController
 
+#pragma mark - Override
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    MyTextField *username = [[MyTextField alloc] initWithFrame:CGRectMake(30, 50, self.view.bounds.size.width - 60, 35)];
+    username.placeholder = @"请输入用户名";
+    [self.view addSubview:username];
+    MyTextField *password = [[MyTextField alloc] initWithFrame:CGRectMake(30, 100, self.view.bounds.size.width - 60, 35)];
+    password.placeholder = @"请输入密码";
+    [self.view addSubview:password];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

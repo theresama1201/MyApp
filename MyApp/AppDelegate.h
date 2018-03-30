@@ -16,6 +16,7 @@
 - (void)successSigninApp;
 - (void)showTabBarController;
 - (void)showMyView;
+- (void)showSigninView;
 
 @end
 

@@ -56,6 +56,10 @@
 		FB4EB297206CDB1E00A5393B /* NSNotificationCenter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB296206CDB1E00A5393B /* NSNotificationCenter+Category.m */; };
 		FB4EB29E206CEB0F00A5393B /* MyMemorialDayEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB29C206CEB0F00A5393B /* MyMemorialDayEditController.m */; };
 		FB4EB29F206CEB0F00A5393B /* MyMemorialDayEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4EB29D206CEB0F00A5393B /* MyMemorialDayEditController.xib */; };
+		FB4EB2A2206DCDF500A5393B /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2A1206DCDF500A5393B /* MyTextField.m */; };
+		FB4EB2A5206DCFE000A5393B /* MyBaseWithNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2A4206DCFE000A5393B /* MyBaseWithNibView.m */; };
+		FB4EB2AA206E192400A5393B /* MySigninController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2A8206E192400A5393B /* MySigninController.m */; };
+		FB4EB2AB206E192400A5393B /* MySigninController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4EB2A9206E192400A5393B /* MySigninController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +167,13 @@
 		FB4EB29B206CEB0F00A5393B /* MyMemorialDayEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMemorialDayEditController.h; sourceTree = "<group>"; };
 		FB4EB29C206CEB0F00A5393B /* MyMemorialDayEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMemorialDayEditController.m; sourceTree = "<group>"; };
 		FB4EB29D206CEB0F00A5393B /* MyMemorialDayEditController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMemorialDayEditController.xib; sourceTree = "<group>"; };
+		FB4EB2A0206DCDF500A5393B /* MyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		FB4EB2A1206DCDF500A5393B /* MyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
+		FB4EB2A3206DCFE000A5393B /* MyBaseWithNibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaseWithNibView.h; sourceTree = "<group>"; };
+		FB4EB2A4206DCFE000A5393B /* MyBaseWithNibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBaseWithNibView.m; sourceTree = "<group>"; };
+		FB4EB2A7206E192400A5393B /* MySigninController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySigninController.h; sourceTree = "<group>"; };
+		FB4EB2A8206E192400A5393B /* MySigninController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySigninController.m; sourceTree = "<group>"; };
+		FB4EB2A9206E192400A5393B /* MySigninController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySigninController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +261,7 @@
 		FB470837206347220054CAD1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FB4EB2A6206E190300A5393B /* Signin */,
 				FB4708822063B1060054CAD1 /* MyView */,
 				FB470838206347520054CAD1 /* Launch */,
 				FB47086B20637C320054CAD1 /* MemorialDay */,
@@ -322,6 +334,8 @@
 		FB470849206373C50054CAD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB4EB2A3206DCFE000A5393B /* MyBaseWithNibView.h */,
+				FB4EB2A4206DCFE000A5393B /* MyBaseWithNibView.m */,
 				FB47088E2064F5A90054CAD1 /* MyBaseView.h */,
 				FB47088F2064F5A90054CAD1 /* MyBaseView.m */,
 				FB47088B2064F58D0054CAD1 /* MySegmentView.h */,
@@ -330,6 +344,8 @@
 				FB4708A1206A1D2C0054CAD1 /* MyDrawView.m */,
 				FB4714A0206CB4960054CAD1 /* MyAlertView.h */,
 				FB4714A1206CB4960054CAD1 /* MyAlertView.m */,
+				FB4EB2A0206DCDF500A5393B /* MyTextField.h */,
+				FB4EB2A1206DCDF500A5393B /* MyTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -556,6 +572,16 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		FB4EB2A6206E190300A5393B /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				FB4EB2A7206E192400A5393B /* MySigninController.h */,
+				FB4EB2A8206E192400A5393B /* MySigninController.m */,
+				FB4EB2A9206E192400A5393B /* MySigninController.xib */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -674,6 +700,7 @@
 				FB47087220637C600054CAD1 /* MyMemorialDayController.xib in Resources */,
 				FB471495206B77240054CAD1 /* MyMemorialDayDetailController.xib in Resources */,
 				FB470862206378830054CAD1 /* MyPhotoController.xib in Resources */,
+				FB4EB2AB206E192400A5393B /* MySigninController.xib in Resources */,
 				FB47085A206378470054CAD1 /* MyNotepadController.xib in Resources */,
 				FB47089F206A1A820054CAD1 /* MyMemorialDayCell.xib in Resources */,
 				FB47086A206378C00054CAD1 /* MyMoreController.xib in Resources */,
@@ -769,6 +796,7 @@
 				FB471484206B5CD40054CAD1 /* MyDateTool.m in Sources */,
 				FB4714A5206CBD2D0054CAD1 /* UIButton+Category.m in Sources */,
 				FB470899206A0EDC0054CAD1 /* MyMemorialDayView.m in Sources */,
+				FB4EB2AA206E192400A5393B /* MySigninController.m in Sources */,
 				FB4708932064F6100054CAD1 /* UIView+Constraint.m in Sources */,
 				FB470847206354860054CAD1 /* UIViewController+Initialize.m in Sources */,
 				FB4708802063AA940054CAD1 /* MyAddController.m in Sources */,
@@ -776,6 +804,7 @@
 				FB47087520637E650054CAD1 /* UIColor+Hex.m in Sources */,
 				FB47088D2064F58D0054CAD1 /* MySegmentView.m in Sources */,
 				FB4EB29E206CEB0F00A5393B /* MyMemorialDayEditController.m in Sources */,
+				FB4EB2A5206DCFE000A5393B /* MyBaseWithNibView.m in Sources */,
 				FB470869206378C00054CAD1 /* MyMoreController.m in Sources */,
 				FB4708962064FE6C0054CAD1 /* UIView+Frame.m in Sources */,
 				FB471490206B5FF60054CAD1 /* NSArray+Category.m in Sources */,
@@ -783,6 +812,7 @@
 				FB4714A2206CB4960054CAD1 /* MyAlertView.m in Sources */,
 				FB471471206A2BCF0054CAD1 /* UIView+Border.m in Sources */,
 				FB471480206B22900054CAD1 /* MyMemorialDayService.m in Sources */,
+				FB4EB2A2206DCDF500A5393B /* MyTextField.m in Sources */,
 				FB47089E206A1A820054CAD1 /* MyMemorialDayCell.m in Sources */,
 				FB4708892063B14E0054CAD1 /* MyViewController.m in Sources */,
 			);

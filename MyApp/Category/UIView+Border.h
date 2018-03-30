@@ -11,6 +11,7 @@
 @interface UIView (Border)
 
 - (void)drawAllBorderWithWidth:(float)borderWidth cornerRadius:(float)cornerRadius color:(UIColor *)color;
+- (void)drawBottomBorder:(float)width color:(UIColor *)color;
 - (void)drawCycle;
 - (void)drawHorizontalLine:(UIView *)view color:(UIColor *)color;
 

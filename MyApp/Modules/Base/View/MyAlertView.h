@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyBaseView.h"
 
 @protocol MyAlertViewDelegate;
 
-@interface MyAlertView : UIView
+@interface MyAlertView : MyBaseView
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *message;

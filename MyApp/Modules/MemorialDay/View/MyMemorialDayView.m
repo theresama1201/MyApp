@@ -56,6 +56,7 @@ static NSString *const MyMemorialDayCellIdentity = @"MyMemorialDayCell";
 }
 
 #pragma mark - UITableViewDelegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self.delegate respondsToSelector:@selector(showsMemorialDayDetailView:withMemorialDayModel:)]) {
         [self.delegate showsMemorialDayDetailView:self withMemorialDayModel:[self.memorialDaysArray objectAtIndex:indexPath.row]];

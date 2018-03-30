@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '97F9D3209895DC3DA02E4FAE77681273'
+               BlueprintIdentifier = '414EA4E4A2F5F704C1244CC10F6030CB'
                BlueprintName = 'SRMModalViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSRMModalViewController.a'>

@@ -7,6 +7,7 @@
 //
 
 #import "MyMemorialDayDetailController.h"
+#import "MyMemorialDayEditController.h"
 #import "MyAlertView.h"
 #import "MyMemorialDayService.h"
 #import "MyMemorialDayModel.h"
@@ -15,6 +16,7 @@
 #import "NSNotificationCenter+Category.h"
 #import "UIView+Border.h"
 #import "UIColor+Hex.h"
+#import "UIViewController+Initialize.h"
 
 @interface MyMemorialDayDetailController ()<MyAlertViewDelegate>
 
@@ -45,7 +47,8 @@
 }
 
 - (IBAction)clickEditButton:(id)sender {
-
+    MyMemorialDayEditController *memorialDayEditController = [MyMemorialDayEditController initFromNib];
+    [self.navigationController pushViewController:memorialDayEditController animated:YES];
 }
 
 #pragma mark - MyAlertViewDelegate

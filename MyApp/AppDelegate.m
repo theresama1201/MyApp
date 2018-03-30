@@ -10,6 +10,7 @@
 #import "MyLaunchController.h"
 #import "MyTabBarController.h"
 #import "MyViewController.h"
+#import "MySigninController.h"
 #import "MyControllerFactory.h"
 #import "UIViewController+Initialize.h"
 
@@ -75,6 +76,11 @@
 
 - (void)showTabBarController {
     self.window.rootViewController = self.tabbarController;
+}
+
+- (void)showSigninView {
+    MySigninController *signinController = [MySigninController initFromNib];
+    self.window.rootViewController = signinController;
 }
 
 #pragma mark - getter

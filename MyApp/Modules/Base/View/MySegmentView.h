@@ -12,7 +12,7 @@
 @protocol MySegmentViewDataSource;
 @protocol MySegmentViewDelegate;
 
-@interface MySegmentView : UIView
+@interface MySegmentView : MyBaseView
 
 @property (nonatomic, weak) IBOutlet id<MySegmentViewDataSource> dataSource;
 @property (nonatomic, weak) IBOutlet id<MySegmentViewDelegate> delegate;

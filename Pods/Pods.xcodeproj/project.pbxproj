@@ -7,77 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2237CC4513D1E2C444E3F2AA3E6C60 /* SRMModalViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DF7ED89F4898691B09B40ECA4BFEF /* SRMModalViewController-dummy.m */; };
-		25F026A1774D3AFA1888819658DC2894 /* SRMModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EF276B8EE1A614871E729FBF0934F2 /* SRMModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E2E149C7A24A143C9C2D68C924C6D73 /* SRMModalContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FD3E199276FEEDB80DFE51A40DC00C /* SRMModalContainerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A58B728A56099811F41EEDB8389160A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		55100ED55D11E1E36AB288A84FC377C8 /* SRMModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A7A815C3CC8991DCCA2E41A70E6FA1 /* SRMModalViewController.m */; };
-		73F28B86FE2199CAEC998523D348F22B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8C07EB3C5A8CA0606E3B9521BCABF90D /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C994704C98C833E3EF30B0B62E6404C4 /* UIView+Constraint.m */; };
-		99A80FB96B92D271EC96ADC5FC7023E7 /* Pods-MyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BEB38A6D2061414EEC9FF5C0410F1 /* Pods-MyApp-dummy.m */; };
-		DC20F33D66E5972E2C05F3A9E0885E8A /* UIView+Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E5A0580A8FF7D86D2F299E9F5BB94F /* UIView+Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3FC286474344AFE9B23BED0D07BE89C /* SRMModalContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13011A42B52243E4FB2378B855070FFC /* SRMModalContainerController.m */; };
+		238B7110EC05B98FAB499473081F0366 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B5F00A4C00E8B8C1679220C1CD809 /* UIView+Constraint.m */; };
+		32475917B5544429E1012A082407BBDF /* UIView+Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 269BE794F71307D6F267FC1F7C595761 /* UIView+Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DE9773A7E3EB0F04F9B93CD3B0AA95 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39761B429AA0CCD525A49DA0F2488E5F /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		43DCE56624AA4041EAEB9103308ADEB7 /* SRMModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A2279925733CC20CC9E0B3EA324956EC /* SRMModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495DC33CE8D51BB87AB1ADC5208753AE /* SRMModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2B72B4AD7A3EA1A760E66963395248 /* SRMModalViewController.m */; };
+		59D486EC5D3D27FC4F54EEFECF342BDC /* SRMModalViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA18D66335818CAEAE9DC4E75C61ADC /* SRMModalViewController-dummy.m */; };
+		6F7F575D5F6D6D827A392C5E7EFE1414 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F15A5E088797977A742AEC4E44EAA0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7043FBCE9172F6A023292723073EBCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		784EEED7673AD94D6634E395F73C306D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		81CA0558CDBEBDE40F2CDD7E33E50018 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C38187DABF558546B2F85A26D30C4B /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		908A73E36FD224692861A0C0A6851126 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5893A098ADADB847667AD653237670C7 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5DFBEF1EE910FFD6AD057A31556CB30 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B57FB263D550C5DDCD1BFB2CA888638 /* TPKeyboardAvoiding-dummy.m */; };
+		CEC9FE96FAA5202E80CAD6B1DB2FC428 /* Pods-MyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BEB38A6D2061414EEC9FF5C0410F1 /* Pods-MyApp-dummy.m */; };
+		D027190BB73F4D07DCFBB4EA63FEBDC8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C4B1BF276D3F51DBFA7243914ECAFE /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2FFEF1F87748BE2AE49791A8D158ED2 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F4457A7BF35BFF7B03A68B475F288 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3C0862ED7420CF557194E4BB273FBA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D6A68A658B03F9BD87C7C62D5903F5FE /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D16DA9179A49269FC4ABB34AFB55D4 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD21768E735DDB9BE48FF318FA765BF /* SRMModalContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B35CC498211DD61BD71A3CAC6033206 /* SRMModalContainerController.m */; };
+		F21B85E106B196DE1397100B1BF8893E /* SRMModalContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 072FD192028A97376086E83C707126C1 /* SRMModalContainerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FCBCB80BCE66FEB3835491410F1ADB /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22A06BE8FC4C9A99D555502EF9D567D5 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		82D8CCB2ADD40B72AD33F3696FF6F517 /* PBXContainerItemProxy */ = {
+		05C0429830C632AED2ED4A8BF7F73D0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97F9D3209895DC3DA02E4FAE77681273;
+			remoteGlobalIDString = 7FD07A9449EC2EE5904FE00BF407016A;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		CB5BEFF840BC5792D1AFEEE6B5044840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 414EA4E4A2F5F704C1244CC10F6030CB;
 			remoteInfo = SRMModalViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072FD192028A97376086E83C707126C1 /* SRMModalContainerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SRMModalContainerController.h; sourceTree = "<group>"; };
+		0B5859FEFAA777F712903ABD6705EBD0 /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyApp.a"; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EA18D66335818CAEAE9DC4E75C61ADC /* SRMModalViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SRMModalViewController-dummy.m"; sourceTree = "<group>"; };
+		0F4B011DB334B860AC2B0B89355A171B /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		0F618CAA6E0C063C818494A720087C90 /* Pods-MyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		13011A42B52243E4FB2378B855070FFC /* SRMModalContainerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SRMModalContainerController.m; sourceTree = "<group>"; };
-		187DF7ED89F4898691B09B40ECA4BFEF /* SRMModalViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SRMModalViewController-dummy.m"; sourceTree = "<group>"; };
 		1DE7B124BEB3FFAD6F6091EF2FEDA9DD /* Pods-MyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyApp-resources.sh"; sourceTree = "<group>"; };
-		2823D3C2CD897C7B751970A00C5273E5 /* SRMModalViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SRMModalViewController.xcconfig; sourceTree = "<group>"; };
+		22A06BE8FC4C9A99D555502EF9D567D5 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		269BE794F71307D6F267FC1F7C595761 /* UIView+Constraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
+		2B57FB263D550C5DDCD1BFB2CA888638 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
 		314BEB38A6D2061414EEC9FF5C0410F1 /* Pods-MyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyApp-dummy.m"; sourceTree = "<group>"; };
-		36FD3E199276FEEDB80DFE51A40DC00C /* SRMModalContainerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SRMModalContainerController.h; sourceTree = "<group>"; };
-		43C823F29CE92880A82E8EBBF4D2B166 /* SRMModalViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SRMModalViewController-prefix.pch"; sourceTree = "<group>"; };
-		46EF276B8EE1A614871E729FBF0934F2 /* SRMModalViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SRMModalViewController.h; sourceTree = "<group>"; };
+		39761B429AA0CCD525A49DA0F2488E5F /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		40F15A5E088797977A742AEC4E44EAA0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		5893A098ADADB847667AD653237670C7 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		62EA5C8496BB3FE5579876A27F0F09F0 /* Pods-MyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyApp-frameworks.sh"; sourceTree = "<group>"; };
-		6DFFC732AECF13924628CCC782C68535 /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyApp.a"; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		700B5F00A4C00E8B8C1679220C1CD809 /* UIView+Constraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
+		7022CDF61454F414BBF2B77A99FC41D1 /* SRMModalViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SRMModalViewController.xcconfig; sourceTree = "<group>"; };
 		73DFCCD66C0E321D84D42434078325BB /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
-		87A7A815C3CC8991DCCA2E41A70E6FA1 /* SRMModalViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SRMModalViewController.m; sourceTree = "<group>"; };
+		7EC727531F7DA9C39C06537B55A5A67E /* libTPKeyboardAvoiding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTPKeyboardAvoiding.a; path = libTPKeyboardAvoiding.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		890B608A51F86984DF1542ABA87EFEBC /* Pods-MyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D1B811DF9CA39DAB1D060AB5598E1C /* libSRMModalViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSRMModalViewController.a; path = libSRMModalViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C994704C98C833E3EF30B0B62E6404C4 /* UIView+Constraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
+		9B35CC498211DD61BD71A3CAC6033206 /* SRMModalContainerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SRMModalContainerController.m; sourceTree = "<group>"; };
+		A2279925733CC20CC9E0B3EA324956EC /* SRMModalViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SRMModalViewController.h; sourceTree = "<group>"; };
+		AB2B72B4AD7A3EA1A760E66963395248 /* SRMModalViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SRMModalViewController.m; sourceTree = "<group>"; };
+		B8C38187DABF558546B2F85A26D30C4B /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		C241F658CBE89A3F4FC39EF98317E15C /* SRMModalViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SRMModalViewController-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D6CFAC9980D5E708FDE973CF745CE10B /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
-		E2E5A0580A8FF7D86D2F299E9F5BB94F /* UIView+Constraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
+		E5C4B1BF276D3F51DBFA7243914ECAFE /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		EB1F4457A7BF35BFF7B03A68B475F288 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		F5D16DA9179A49269FC4ABB34AFB55D4 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		FCEF72335B9343789F866EE512A757E1 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		FD95127606414C6CC1E7E41A2C2EDBA2 /* libSRMModalViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSRMModalViewController.a; path = libSRMModalViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		895B903BD7D6D0443DEFDA7D415DBB42 /* Frameworks */ = {
+		1E6441383F18EECCEBF5E4EA12C169F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A58B728A56099811F41EEDB8389160A /* Foundation.framework in Frameworks */,
+				7043FBCE9172F6A023292723073EBCB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9B5E02B01A6F667D3BA27591721D898 /* Frameworks */ = {
+		7E37D1103AB9C1212D2AA7A1694825E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F28B86FE2199CAEC998523D348F22B /* Foundation.framework in Frameworks */,
+				D3C0862ED7420CF557194E4BB273FBA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2266F9482A8C066C72980A3ABFA822D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784EEED7673AD94D6634E395F73C306D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04967D2846ED31BD5FCAE8F9C30664C9 /* Pods */ = {
+		171933F9FA48BFAC454B1F7EFA4A053C /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				CD46F147980C24ABDB3468271EC25720 /* SRMModalViewController */,
+				22A06BE8FC4C9A99D555502EF9D567D5 /* TPKeyboardAvoidingCollectionView.h */,
+				B8C38187DABF558546B2F85A26D30C4B /* TPKeyboardAvoidingCollectionView.m */,
+				F5D16DA9179A49269FC4ABB34AFB55D4 /* TPKeyboardAvoidingScrollView.h */,
+				E5C4B1BF276D3F51DBFA7243914ECAFE /* TPKeyboardAvoidingScrollView.m */,
+				5893A098ADADB847667AD653237670C7 /* TPKeyboardAvoidingTableView.h */,
+				39761B429AA0CCD525A49DA0F2488E5F /* TPKeyboardAvoidingTableView.m */,
+				40F15A5E088797977A742AEC4E44EAA0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				EB1F4457A7BF35BFF7B03A68B475F288 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				765E65F1796D19167F571259D1FBC99F /* Support Files */,
 			);
-			name = Pods;
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		335B6D02E6A1B23FAB343FC7C12BEFB5 /* Targets Support Files */ = {
@@ -103,17 +149,6 @@
 			path = "Target Support Files/Pods-MyApp";
 			sourceTree = "<group>";
 		};
-		6CF22655AA6B2DA8D720C92A05AFB51E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2823D3C2CD897C7B751970A00C5273E5 /* SRMModalViewController.xcconfig */,
-				187DF7ED89F4898691B09B40ECA4BFEF /* SRMModalViewController-dummy.m */,
-				43C823F29CE92880A82E8EBBF4D2B166 /* SRMModalViewController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SRMModalViewController";
-			sourceTree = "<group>";
-		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,24 +157,71 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		765E65F1796D19167F571259D1FBC99F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B011DB334B860AC2B0B89355A171B /* TPKeyboardAvoiding.xcconfig */,
+				2B57FB263D550C5DDCD1BFB2CA888638 /* TPKeyboardAvoiding-dummy.m */,
+				FCEF72335B9343789F866EE512A757E1 /* TPKeyboardAvoiding-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		76C862D8EC7C121B80BDBD21BD150601 /* SRMModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				072FD192028A97376086E83C707126C1 /* SRMModalContainerController.h */,
+				9B35CC498211DD61BD71A3CAC6033206 /* SRMModalContainerController.m */,
+				A2279925733CC20CC9E0B3EA324956EC /* SRMModalViewController.h */,
+				AB2B72B4AD7A3EA1A760E66963395248 /* SRMModalViewController.m */,
+				269BE794F71307D6F267FC1F7C595761 /* UIView+Constraint.h */,
+				700B5F00A4C00E8B8C1679220C1CD809 /* UIView+Constraint.m */,
+				782C849B58F336F7D0165BA0CD3749DD /* Support Files */,
+			);
+			name = SRMModalViewController;
+			path = SRMModalViewController;
+			sourceTree = "<group>";
+		};
+		782C849B58F336F7D0165BA0CD3749DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7022CDF61454F414BBF2B77A99FC41D1 /* SRMModalViewController.xcconfig */,
+				0EA18D66335818CAEAE9DC4E75C61ADC /* SRMModalViewController-dummy.m */,
+				C241F658CBE89A3F4FC39EF98317E15C /* SRMModalViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SRMModalViewController";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				04967D2846ED31BD5FCAE8F9C30664C9 /* Pods */,
-				B40B8B2FFFC3B3039BB2B0776820E766 /* Products */,
+				A84536C1316DD1A8A80924F92D7FBD88 /* Pods */,
+				90C9DCCE2F126CB41B3329933000ECCC /* Products */,
 				335B6D02E6A1B23FAB343FC7C12BEFB5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B40B8B2FFFC3B3039BB2B0776820E766 /* Products */ = {
+		90C9DCCE2F126CB41B3329933000ECCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DFFC732AECF13924628CCC782C68535 /* libPods-MyApp.a */,
-				93D1B811DF9CA39DAB1D060AB5598E1C /* libSRMModalViewController.a */,
+				0B5859FEFAA777F712903ABD6705EBD0 /* libPods-MyApp.a */,
+				FD95127606414C6CC1E7E41A2C2EDBA2 /* libSRMModalViewController.a */,
+				7EC727531F7DA9C39C06537B55A5A67E /* libTPKeyboardAvoiding.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A84536C1316DD1A8A80924F92D7FBD88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76C862D8EC7C121B80BDBD21BD150601 /* SRMModalViewController */,
+				171933F9FA48BFAC454B1F7EFA4A053C /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -150,61 +232,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CD46F147980C24ABDB3468271EC25720 /* SRMModalViewController */ = {
-			isa = PBXGroup;
-			children = (
-				36FD3E199276FEEDB80DFE51A40DC00C /* SRMModalContainerController.h */,
-				13011A42B52243E4FB2378B855070FFC /* SRMModalContainerController.m */,
-				46EF276B8EE1A614871E729FBF0934F2 /* SRMModalViewController.h */,
-				87A7A815C3CC8991DCCA2E41A70E6FA1 /* SRMModalViewController.m */,
-				E2E5A0580A8FF7D86D2F299E9F5BB94F /* UIView+Constraint.h */,
-				C994704C98C833E3EF30B0B62E6404C4 /* UIView+Constraint.m */,
-				6CF22655AA6B2DA8D720C92A05AFB51E /* Support Files */,
-			);
-			name = SRMModalViewController;
-			path = SRMModalViewController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5D4D77D74D2D3F8D82723675E37D1B18 /* Headers */ = {
+		1C48AF36732F9E7F027AD96ABACDDA57 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2E149C7A24A143C9C2D68C924C6D73 /* SRMModalContainerController.h in Headers */,
-				25F026A1774D3AFA1888819658DC2894 /* SRMModalViewController.h in Headers */,
-				DC20F33D66E5972E2C05F3A9E0885E8A /* UIView+Constraint.h in Headers */,
+				F21B85E106B196DE1397100B1BF8893E /* SRMModalContainerController.h in Headers */,
+				43DCE56624AA4041EAEB9103308ADEB7 /* SRMModalViewController.h in Headers */,
+				32475917B5544429E1012A082407BBDF /* UIView+Constraint.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FDC234C97627DE8C8486A04416FC2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FCBCB80BCE66FEB3835491410F1ADB /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				D6A68A658B03F9BD87C7C62D5903F5FE /* TPKeyboardAvoidingScrollView.h in Headers */,
+				908A73E36FD224692861A0C0A6851126 /* TPKeyboardAvoidingTableView.h in Headers */,
+				6F7F575D5F6D6D827A392C5E7EFE1414 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2501D45F9B86DF2E25EBA752D8762990 /* Pods-MyApp */ = {
+		414EA4E4A2F5F704C1244CC10F6030CB /* SRMModalViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D43E1EC6A796023197A55AAF07051C2 /* Build configuration list for PBXNativeTarget "Pods-MyApp" */;
+			buildConfigurationList = 2F4B6B27671B91D51A10E53CCD7E1434 /* Build configuration list for PBXNativeTarget "SRMModalViewController" */;
 			buildPhases = (
-				3D10F5BD6C08E911C532160F35F7FDF0 /* Sources */,
-				895B903BD7D6D0443DEFDA7D415DBB42 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				938DF814F9EA9B4A9C5982E02896750F /* PBXTargetDependency */,
-			);
-			name = "Pods-MyApp";
-			productName = "Pods-MyApp";
-			productReference = 6DFFC732AECF13924628CCC782C68535 /* libPods-MyApp.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		97F9D3209895DC3DA02E4FAE77681273 /* SRMModalViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6510F61598E1A17DFC1EC96BAF987891 /* Build configuration list for PBXNativeTarget "SRMModalViewController" */;
-			buildPhases = (
-				68571EEBAC565033D432733488381968 /* Sources */,
-				F9B5E02B01A6F667D3BA27591721D898 /* Frameworks */,
-				5D4D77D74D2D3F8D82723675E37D1B18 /* Headers */,
+				2D9DFC69D34A24175DE945A132C66440 /* Sources */,
+				1E6441383F18EECCEBF5E4EA12C169F8 /* Frameworks */,
+				1C48AF36732F9E7F027AD96ABACDDA57 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -212,7 +273,42 @@
 			);
 			name = SRMModalViewController;
 			productName = SRMModalViewController;
-			productReference = 93D1B811DF9CA39DAB1D060AB5598E1C /* libSRMModalViewController.a */;
+			productReference = FD95127606414C6CC1E7E41A2C2EDBA2 /* libSRMModalViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63A16DEEFFB9DA052F203526F09F3EE7 /* Pods-MyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEC636937737CE31FFEA8B60E843ED3 /* Build configuration list for PBXNativeTarget "Pods-MyApp" */;
+			buildPhases = (
+				A671E047D02D22CF3EFB9BD06C43FB19 /* Sources */,
+				7E37D1103AB9C1212D2AA7A1694825E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585F86FEA26F8943825E1D7C155E6DF0 /* PBXTargetDependency */,
+				0842B78DA7FEC32946B0BBE67C8BD2E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyApp";
+			productName = "Pods-MyApp";
+			productReference = 0B5859FEFAA777F712903ABD6705EBD0 /* libPods-MyApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7FD07A9449EC2EE5904FE00BF407016A /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FFCD1BDA9E34CB87653841CC2ABEA4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				FD17D8CBD74BF9EDD870B9F4EBCCF93E /* Sources */,
+				B2266F9482A8C066C72980A3ABFA822D /* Frameworks */,
+				44FDC234C97627DE8C8486A04416FC2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 7EC727531F7DA9C39C06537B55A5A67E /* libTPKeyboardAvoiding.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -232,44 +328,63 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B40B8B2FFFC3B3039BB2B0776820E766 /* Products */;
+			productRefGroup = 90C9DCCE2F126CB41B3329933000ECCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2501D45F9B86DF2E25EBA752D8762990 /* Pods-MyApp */,
-				97F9D3209895DC3DA02E4FAE77681273 /* SRMModalViewController */,
+				63A16DEEFFB9DA052F203526F09F3EE7 /* Pods-MyApp */,
+				414EA4E4A2F5F704C1244CC10F6030CB /* SRMModalViewController */,
+				7FD07A9449EC2EE5904FE00BF407016A /* TPKeyboardAvoiding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D10F5BD6C08E911C532160F35F7FDF0 /* Sources */ = {
+		2D9DFC69D34A24175DE945A132C66440 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A80FB96B92D271EC96ADC5FC7023E7 /* Pods-MyApp-dummy.m in Sources */,
+				DFD21768E735DDB9BE48FF318FA765BF /* SRMModalContainerController.m in Sources */,
+				59D486EC5D3D27FC4F54EEFECF342BDC /* SRMModalViewController-dummy.m in Sources */,
+				495DC33CE8D51BB87AB1ADC5208753AE /* SRMModalViewController.m in Sources */,
+				238B7110EC05B98FAB499473081F0366 /* UIView+Constraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68571EEBAC565033D432733488381968 /* Sources */ = {
+		A671E047D02D22CF3EFB9BD06C43FB19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FC286474344AFE9B23BED0D07BE89C /* SRMModalContainerController.m in Sources */,
-				1A2237CC4513D1E2C444E3F2AA3E6C60 /* SRMModalViewController-dummy.m in Sources */,
-				55100ED55D11E1E36AB288A84FC377C8 /* SRMModalViewController.m in Sources */,
-				8C07EB3C5A8CA0606E3B9521BCABF90D /* UIView+Constraint.m in Sources */,
+				CEC9FE96FAA5202E80CAD6B1DB2FC428 /* Pods-MyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD17D8CBD74BF9EDD870B9F4EBCCF93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DFBEF1EE910FFD6AD057A31556CB30 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				81CA0558CDBEBDE40F2CDD7E33E50018 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				D027190BB73F4D07DCFBB4EA63FEBDC8 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				40DE9773A7E3EB0F04F9B93CD3B0AA95 /* TPKeyboardAvoidingTableView.m in Sources */,
+				D2FFEF1F87748BE2AE49791A8D158ED2 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		938DF814F9EA9B4A9C5982E02896750F /* PBXTargetDependency */ = {
+		0842B78DA7FEC32946B0BBE67C8BD2E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 7FD07A9449EC2EE5904FE00BF407016A /* TPKeyboardAvoiding */;
+			targetProxy = 05C0429830C632AED2ED4A8BF7F73D0E /* PBXContainerItemProxy */;
+		};
+		585F86FEA26F8943825E1D7C155E6DF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SRMModalViewController;
-			target = 97F9D3209895DC3DA02E4FAE77681273 /* SRMModalViewController */;
-			targetProxy = 82D8CCB2ADD40B72AD33F3696FF6F517 /* PBXContainerItemProxy */;
+			target = 414EA4E4A2F5F704C1244CC10F6030CB /* SRMModalViewController */;
+			targetProxy = CB5BEFF840BC5792D1AFEEE6B5044840 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,28 +433,51 @@
 			};
 			name = Debug;
 		};
-		2E4799C28450734B518905A1BFAC83E4 /* Release */ = {
+		02035540EF36D6597B2BD515EC76D856 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6CFAC9980D5E708FDE973CF745CE10B /* Pods-MyApp.release.xcconfig */;
+			baseConfigurationReference = 0F4B011DB334B860AC2B0B89355A171B /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
+		};
+		3FBC63B1BBE080FA19503899D66BAD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7022CDF61454F414BBF2B77A99FC41D1 /* SRMModalViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SRMModalViewController/SRMModalViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -381,9 +519,55 @@
 			};
 			name = Release;
 		};
-		5D2FF3FF465E7A6C816ECDE41F10B7B3 /* Release */ = {
+		4A903D2DD71AF34F79A704087BDA2587 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2823D3C2CD897C7B751970A00C5273E5 /* SRMModalViewController.xcconfig */;
+			baseConfigurationReference = 0F4B011DB334B860AC2B0B89355A171B /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		546E707A2462FE108505E6A3D913F635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6CFAC9980D5E708FDE973CF745CE10B /* Pods-MyApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		637943D5FCD0E4F857FA5CA4894537C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7022CDF61454F414BBF2B77A99FC41D1 /* SRMModalViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -404,30 +588,7 @@
 			};
 			name = Release;
 		};
-		70E3C342A2C6E83707684CF0910DF810 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2823D3C2CD897C7B751970A00C5273E5 /* SRMModalViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SRMModalViewController/SRMModalViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		75719A34FA2BA317094B1326F93B6B80 /* Debug */ = {
+		9A00A6BED81431D8C9723523866FE734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73DFCCD66C0E321D84D42434078325BB /* Pods-MyApp.debug.xcconfig */;
 			buildSettings = {
@@ -453,11 +614,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D43E1EC6A796023197A55AAF07051C2 /* Build configuration list for PBXNativeTarget "Pods-MyApp" */ = {
+		16FFCD1BDA9E34CB87653841CC2ABEA4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75719A34FA2BA317094B1326F93B6B80 /* Debug */,
-				2E4799C28450734B518905A1BFAC83E4 /* Release */,
+				02035540EF36D6597B2BD515EC76D856 /* Debug */,
+				4A903D2DD71AF34F79A704087BDA2587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -471,11 +632,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6510F61598E1A17DFC1EC96BAF987891 /* Build configuration list for PBXNativeTarget "SRMModalViewController" */ = {
+		2F4B6B27671B91D51A10E53CCD7E1434 /* Build configuration list for PBXNativeTarget "SRMModalViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70E3C342A2C6E83707684CF0910DF810 /* Debug */,
-				5D2FF3FF465E7A6C816ECDE41F10B7B3 /* Release */,
+				3FBC63B1BBE080FA19503899D66BAD8D /* Debug */,
+				637943D5FCD0E4F857FA5CA4894537C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEC636937737CE31FFEA8B60E843ED3 /* Build configuration list for PBXNativeTarget "Pods-MyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A00A6BED81431D8C9723523866FE734 /* Debug */,
+				546E707A2462FE108505E6A3D913F635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

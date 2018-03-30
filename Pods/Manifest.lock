@@ -1,12 +1,15 @@
 PODS:
   - SRMModalViewController (0.0.3)
+  - TPKeyboardAvoiding (1.3.1)
 
 DEPENDENCIES:
   - SRMModalViewController
+  - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   SRMModalViewController: b15d762c6c2531fb0d14f756fd513b1aef4c98a1
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 
-PODFILE CHECKSUM: 03f4b36afefe0bc3a7c4a075e15d98dbd3aacb1b
+PODFILE CHECKSUM: 59554b58554ca1fc3087fe15a711077e2e634894
 
 COCOAPODS: 1.2.0

@@ -27,22 +27,6 @@
 
 #pragma mark - Override
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        [self initialize];
-    }
-
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self initialize];
-    }
-
-    return self;
-}
-
 - (void)layoutSubviews {
     [super layoutSubviews];
 
@@ -66,14 +50,14 @@
     [self.selectedTitleButton setTitleColor:self.titleDefaultColor forState:UIControlStateNormal];
     self.selectedTitleButton = titleButton;
     _selectedIndex = titleButton.tag;
-    [self correctHeader:nil];
+    [self handleHeaderMove:nil];
 
     if ([self.delegate respondsToSelector:@selector(segmentView:showViewAtIndex:)]) {
         [self.delegate segmentView:self showViewAtIndex:titleButton.tag];
     }
 }
 
-- (void)correctHeader:(UIScrollView *)scrollView {
+- (void)handleHeaderMove:(UIScrollView *)scrollView {
     NSInteger previousTotalWidth = 0;
 
     for (int i = 0; i < self.selectedIndex; i++) {
@@ -107,7 +91,7 @@
     UIButton *titleButton = self.titleContainerView.subviews[index + 1];
     self.selectedTitleButton = titleButton;
     _selectedIndex = index;
-    [self correctHeader:scrollView];
+    [self handleHeaderMove:scrollView];
 
     if ([self.delegate respondsToSelector:@selector(segmentView:showViewAtIndex:)]) {
         [self.delegate segmentView:self showViewAtIndex:index];

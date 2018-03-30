@@ -18,6 +18,13 @@
     self.layer.borderColor = [color CGColor];
 }
 
+- (void)drawBottomBorder:(float)width color:(UIColor *)color {
+    CALayer *bottomBorder = [CALayer layer];
+    bottomBorder.frame = CGRectMake(0.0f, self.frame.size.height - width, self.frame.size.width, width);
+    bottomBorder.backgroundColor = [color CGColor];
+    [self.layer addSublayer:bottomBorder];
+}
+
 - (void)drawCycle {
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = self.frame.size.width / 2;

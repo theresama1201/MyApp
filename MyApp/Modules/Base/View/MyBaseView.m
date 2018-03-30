@@ -7,13 +7,11 @@
 //
 
 #import "MyBaseView.h"
-#import "UIView+Constraint.h"
 
 @implementation MyBaseView
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [self initializeContentView];
         [self initialize];
     }
 
@@ -22,23 +20,10 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self initializeContentView];
         [self initialize];
     }
 
     return self;
-}
-
-- (void)initializeContentView {
-    
-    NSArray *viewArray = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil];
-
-    if (viewArray.firstObject) {
-        UIView *contentView = viewArray.firstObject;
-        [self addSubview:contentView];
-        contentView.translatesAutoresizingMaskIntoConstraints = NO;
-        [contentView addEdgesConstraintsEqualToView:self];
-    }
 }
 
 - (void)initialize {}
