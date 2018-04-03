@@ -60,6 +60,8 @@
 		FB4EB2A5206DCFE000A5393B /* MyBaseWithNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2A4206DCFE000A5393B /* MyBaseWithNibView.m */; };
 		FB4EB2AA206E192400A5393B /* MySigninController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2A8206E192400A5393B /* MySigninController.m */; };
 		FB4EB2AB206E192400A5393B /* MySigninController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4EB2A9206E192400A5393B /* MySigninController.xib */; };
+		FB4EB2AE2071C9D200A5393B /* MyBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB2AD2071C9D200A5393B /* MyBackView.m */; };
+		FB4EB2B22071CA1F00A5393B /* MyBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4EB2B12071CA1F00A5393B /* MyBackView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,9 @@
 		FB4EB2A7206E192400A5393B /* MySigninController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySigninController.h; sourceTree = "<group>"; };
 		FB4EB2A8206E192400A5393B /* MySigninController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySigninController.m; sourceTree = "<group>"; };
 		FB4EB2A9206E192400A5393B /* MySigninController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySigninController.xib; sourceTree = "<group>"; };
+		FB4EB2AC2071C9D200A5393B /* MyBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBackView.h; sourceTree = "<group>"; };
+		FB4EB2AD2071C9D200A5393B /* MyBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBackView.m; sourceTree = "<group>"; };
+		FB4EB2B12071CA1F00A5393B /* MyBackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBackView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +351,9 @@
 				FB4714A1206CB4960054CAD1 /* MyAlertView.m */,
 				FB4EB2A0206DCDF500A5393B /* MyTextField.h */,
 				FB4EB2A1206DCDF500A5393B /* MyTextField.m */,
+				FB4EB2AC2071C9D200A5393B /* MyBackView.h */,
+				FB4EB2AD2071C9D200A5393B /* MyBackView.m */,
+				FB4EB2B12071CA1F00A5393B /* MyBackView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -698,6 +706,7 @@
 				FB4708792063AA190054CAD1 /* Info.plist in Resources */,
 				FB4708812063AA940054CAD1 /* MyAddController.xib in Resources */,
 				FB47087220637C600054CAD1 /* MyMemorialDayController.xib in Resources */,
+				FB4EB2B22071CA1F00A5393B /* MyBackView.xib in Resources */,
 				FB471495206B77240054CAD1 /* MyMemorialDayDetailController.xib in Resources */,
 				FB470862206378830054CAD1 /* MyPhotoController.xib in Resources */,
 				FB4EB2AB206E192400A5393B /* MySigninController.xib in Resources */,
@@ -808,6 +817,7 @@
 				FB470869206378C00054CAD1 /* MyMoreController.m in Sources */,
 				FB4708962064FE6C0054CAD1 /* UIView+Frame.m in Sources */,
 				FB471490206B5FF60054CAD1 /* NSArray+Category.m in Sources */,
+				FB4EB2AE2071C9D200A5393B /* MyBackView.m in Sources */,
 				FB470852206375570054CAD1 /* MyTabBarController.m in Sources */,
 				FB4714A2206CB4960054CAD1 /* MyAlertView.m in Sources */,
 				FB471471206A2BCF0054CAD1 /* UIView+Border.m in Sources */,

@@ -80,7 +80,11 @@
 
 - (void)showSigninView {
     MySigninController *signinController = [MySigninController initFromNib];
-    self.window.rootViewController = signinController;
+    UINavigationController *signinNavController = [MyControllerFactory standardNavigationController];
+    UIBarButtonItem *leftBarItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:signinController action:@selector(clickBackButton)];
+    signinController.navigationItem.leftBarButtonItem = leftBarItem;
+    signinNavController.viewControllers = @[signinController];
+    self.window.rootViewController = signinNavController;
 }
 
 #pragma mark - getter

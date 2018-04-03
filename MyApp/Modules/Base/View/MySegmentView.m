@@ -314,7 +314,7 @@
 
 - (UIColor *)titleSelectedColor {
     if (!_titleSelectedColor) {
-        _titleSelectedColor = [UIColor P3Color];
+        _titleSelectedColor = [UIColor P2Color];
     }
 
     return _titleSelectedColor;
@@ -322,7 +322,7 @@
 
 - (UIColor *)pointerLineViewColor {
     if (!_pointerLineViewColor) {
-        _pointerLineViewColor = [UIColor P3Color];
+        _pointerLineViewColor = [UIColor P2Color];
     }
 
     return _pointerLineViewColor;

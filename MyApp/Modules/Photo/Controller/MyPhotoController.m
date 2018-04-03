@@ -20,8 +20,7 @@
 @implementation MyPhotoController
 
 - (void)viewDidLoad {
-    self.titleArray = @[@"010101010101", @"01.02", @"01.0301.0301.03", @"01.04", @"01.05", @"01.06"];
-//    self.titleArray = @[@"010101010101", @"01.02", @"01.0301.0301.03"];
+    self.titleArray = @[@" 全部 ", @" 毕业前 ", @" 济南 ", @" 杭州 ", @" 宁德 ", @" 乌镇 ", @" 上海 "];
     UIView *view1 = [UIView new];
     view1.backgroundColor = [UIColor P1Color];
     UIView *view2 = [UIView new];
@@ -34,9 +33,10 @@
     view5.backgroundColor = [UIColor B3Color];
     UIView *view6 = [UIView new];
     view6.backgroundColor = [UIColor O1Color];
+    UIView *view7 = [UIView new];
+    view6.backgroundColor = [UIColor O1Color];
 
-    self.viewArray = @[view1, view2, view3, view4, view5, view6];
-//    self.viewArray = @[view1, view2, view3];
+    self.viewArray = @[view1, view2, view3, view4, view5, view6, view7];
 }
 
 

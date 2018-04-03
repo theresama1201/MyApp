@@ -31,7 +31,6 @@
 
 + (MyTabBarController *)mainController {
     MyTabBarController *tabBarController = [[MyTabBarController alloc] init];
-   // tabBarController.delegate = (id<UITabBarControllerDelegate>)[AppDelegate sharedAppDelegate];
     return tabBarController;
 }
 

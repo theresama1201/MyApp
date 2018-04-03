@@ -9,8 +9,13 @@
 #import "MyTextField.h"
 #import "UIColor+Hex.h"
 #import "UIView+Border.h"
+#import "UIView+Frame.h"
 
-@interface MyTextField() <UITextFieldDelegate>
+/**
+    由于 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string；无法监听文本框的联想输入,如果想要通过实现该代理方法来实现这样的效果，需要self.autocorrectionType = UITextAutocorrectionTypeNo(阻止键盘自动联想);可以参考自己简书上通过实现UITextFieldDelegate的代理方法- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string做的效果。
+ */
+
+@interface MyTextField()
 
 @end
 
@@ -34,6 +39,10 @@
     return self;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)setPlaceholder:(NSString *)placeholder {
     NSDictionary *attributes = @{
                                  NSFontAttributeName : [UIFont systemFontOfSize:16],
@@ -43,39 +52,39 @@
     self.attributedPlaceholder = attributedPlaceholder;
 }
 
-#pragma mark- UITextFieldDelegate
+#pragma mark - Responder
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSMutableString * changedString=[[NSMutableString alloc] initWithString:textField.text];
-    [changedString replaceCharactersInRange:range withString:string];
-
-    if (changedString.length == 0) {
-         [self setNormalStyle];
-    }else{
+- (void)textFieldTextDidChange {
+    if (self.text.length != 0) {
         [self setSelectedStyle];
+    } else {
+        [self setNormalStyle];
     }
-
-    return YES;
 }
 
 #pragma mark - Private
 
 - (void)initialize {
-    self.delegate = self;
     self.font = [UIFont systemFontOfSize:16];
     self.textColor = [UIColor B1Color];
     [self setNormalStyle];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
 - (void)setNormalStyle {
-    self.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"textfield_pen_icon"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"textfield_pen_icon"]];
+    imageView.contentMode = UIViewContentModeLeft;
+    self.leftView = imageView;
+    self.leftView.width = 30;
     self.leftViewMode = UITextFieldViewModeAlways;
     [self drawBottomBorder:1 color:[UIColor B5Color]];
-
 }
 
 - (void)setSelectedStyle {
-    self.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"textfield_smile_icon"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"textfield_smile_icon"]];
+    imageView.contentMode = UIViewContentModeLeft;
+    self.leftView = imageView;
+    self.leftView.width = 30;
     self.leftViewMode = UITextFieldViewModeAlways;
     [self drawBottomBorder:1 color:[UIColor P2Color]];
 }
